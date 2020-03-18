@@ -10,6 +10,7 @@
     tools:context=".RoomDetailActuvuty">
 
     <TextView
+        android:id="@+id/priceTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
@@ -19,6 +20,7 @@
         />
 
     <TextView
+        android:id="@+id/addressTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
@@ -27,6 +29,7 @@
         />
 
     <TextView
+        android:id="@+id/floorTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="반지하"
@@ -35,6 +38,7 @@
         />
 
     <TextView
+        android:id="@+id/descTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

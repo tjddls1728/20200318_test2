@@ -47,18 +47,7 @@ public class RoomAdapter extends ArrayAdapter<Room> {
 
 //        가격설정 => setText에는 int값 넣지 말자.
 //        1만 이상이면 억단위 아니면 숫자만 ,찍어서.
-        if (data.getPrice()>=10000){
-//            ?억 %,d로 가공
-//            ?억?
-            int uk = data.getPrice()/10000;
-            int thousand = data.getPrice() %10000;
-
-            priceTxt.setText(String.format("%d억 %,d",uk,thousand));
-
-        }
-        else {
-            priceTxt.setText(String.format("%,d",data.getPrice()));
-        }
+        priceTxt.setText(data.getFormattedPrice());
 
         String floorStr = "";
         if (data.getFloor()>0){
