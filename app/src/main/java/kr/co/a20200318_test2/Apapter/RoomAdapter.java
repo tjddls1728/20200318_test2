@@ -61,7 +61,7 @@ public class RoomAdapter extends ArrayAdapter<Room> {
             floorStr = String.format("지하 %d층",data.getFloor()*-1);
         }
 //     주소 / 층수 결합
-        addressAndFloorTxt.setText(String.format("%s,%s",data.getAddress(),floorStr));
+        addressAndFloorTxt.setText(String.format("%s,%s",data.getAddress(),data.getFloorToString()));
 
 
 //        설명은 들어온 그대로 출력

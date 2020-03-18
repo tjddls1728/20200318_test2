@@ -34,5 +34,7 @@ public class RoomDetailActuvuty extends baseActivity {
 
         binding.descTxt.setText(room.getDescription());
 
+        binding.floorTxt.setText(room.getFloorToString());
+
     }
 }

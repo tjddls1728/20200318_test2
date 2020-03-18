@@ -73,7 +73,7 @@ public class MainActivity extends baseActivity {
 
     private void addRooms() {
         roomDatas.add(new Room(8000,"서울시 은평구", 4 , "살기 좋은 방입니다"));
-        roomDatas.add(new Room(18000,"서울시 노원구", 2 , "노원구의 투룸"));
+        roomDatas.add(new Room(18000,"서울시 노원구", 0 , "노원구의 투룸"));
         roomDatas.add(new Room(28000,"서울시 종로구", 5 , "종로구입니다"));
         roomDatas.add(new Room(38000,"서울시 중랑구", 2 , "2층집 입니다"));
         roomDatas.add(new Room(48000,"서울시 강북구", 10000 , "편의시설이 좋습니다"));
