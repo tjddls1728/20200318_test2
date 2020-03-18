@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import kr.co.a20200318_test2.databinding.ActivityRoomDetailActuvutyBinding;
+import kr.co.a20200318_test2.datas.Room;
 
 public class RoomDetailActuvuty extends baseActivity {
 
@@ -25,6 +26,9 @@ public class RoomDetailActuvuty extends baseActivity {
 
     @Override
     public void setValues() {
+
+//        첨부된 방 데이터를 받아서 화면에 출력.
+        Room room =(Room) getIntent().getSerializableExtra("room");
 
     }
 }

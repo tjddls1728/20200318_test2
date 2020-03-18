@@ -3,6 +3,7 @@ package kr.co.a20200318_test2;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -36,9 +37,14 @@ public class MainActivity extends baseActivity {
         binding.roomListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.d("리스트뷰 아이템클릭",String.format("%d번중 클릭",position));
+
+//                클릭 된 방의 정보를 목록에서 빼옴. position 번째
                 Room clickedRoom = roomDatas.get(position);
-                Toast.makeText(mContext,clickedRoom.getAddress(),Toast.LENGTH_SHORT).show();
+
+//                방 상세 화면으로 이동.
+                Intent intent = new Intent(mContext,RoomDetailActuvuty.class);
+                intent.putExtra("room",clickedRoom);
+                startActivity(intent);
 
                 }
 
